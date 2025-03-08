@@ -1,0 +1,58 @@
+# Configuration pour la visualisation 3D de ravins
+# ===============================================
+
+# Facteur d'exagération verticale
+# Plus la valeur est élevée, plus le relief sera accentué
+# Valeurs recommandées: 2-10 pour des ravins de 2m de profondeur
+exaggeration_factor: 5.0
+
+# Taille des blocs pour le traitement (en pixels)
+# Réduire en cas de mémoire limitée
+chunk_size: 1000
+
+# Format d'exportation du modèle 3D
+# Options: obj, ply, stl, vtk
+output_format: obj
+
+# Facteur de décimation du maillage (0-1)
+# 0 = pas d'optimisation, 1 = optimisation maximale
+# Valeurs autour de 0.5 offrent un bon compromis
+optimization_factor: 0.5
+
+# Répertoire de sortie pour les fichiers générés
+output_directory: output
+
+# Paramètres visuels
+# =================
+
+# Créer automatiquement une capture d'écran
+create_screenshot: true
+
+# Afficher la visualisation interactive
+show_interactive: false
+
+# Couleur d'arrière-plan pour la visualisation 3D
+background_color: white
+
+# Options d'éclairage
+lighting_enabled: true
+light_intensity: 0.8
+light_azimuth: 315
+light_elevation: 45
+
+# Options de prétraitement
+# =======================
+
+# Appliquer un lissage au MNT
+smooth_dem: false
+smooth_sigma: 1.0
+smooth_method: gaussian  # options: gaussian, median, uniform
+
+# Combler les valeurs NoData
+fill_nodata: false
+fill_max_distance: 10
+
+# Extraire automatiquement la zone du ravin
+extract_ravine: false
+ravine_threshold: -0.5
+min_ravine_size: 100
