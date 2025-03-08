@@ -1,0 +1,52 @@
+# Fichiers Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Environnements virtuels
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Fichiers de données volumineux
+# Permettre les .gitkeep et README
+data/raw/*
+!data/raw/README.md
+!data/raw/.gitkeep
+data/preprocessed/*
+!data/preprocessed/.gitkeep
+data/output/*
+!data/output/.gitkeep
+
+# Fichiers de sortie
+*.obj
+*.ply
+*.stl
+*.vtk
+visualizations/
+!visualizations/.gitkeep
+
+# Dossiers et fichiers de configuration
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
