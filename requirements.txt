@@ -1,0 +1,16 @@
+# Dépendances principales
+numpy>=1.20.0
+rasterio>=1.2.0
+pyvista>=0.32.0
+matplotlib>=3.4.0
+scipy>=1.7.0
+PyYAML>=6.0
+
+# Dépendances pour le prétraitement
+gdal>=3.2.0
+scikit-image>=0.18.0
+
+# Dépendances pour la visualisation
+imageio>=2.9.0
+imageio-ffmpeg>=0.4.0  # Pour l'export vidéo
+pillow>=8.0.0  # Pour le traitement d'images
